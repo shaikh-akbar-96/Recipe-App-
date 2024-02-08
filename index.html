@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <script src="index.js" defer></script>
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="mobile-container">
+      <header>
+        <input type="text" id="search-item" />
+        <button id="search"><i class="fas fa-search"></i></button>
+      </header>
+      <div class="fav-container">
+        <h3>Favorite meal</h3>
+        <ul id="fav-meal" class="fav-meal">
+          <li><img src="/Images/veg.jpg " alt="" /><span>vegetables</span></li>
+          <li>
+            <img
+              src="/Images/chicken.jpg
+            "
+              alt=""
+            /><span>Carbonara</span>
+          </li>
+          <li>
+            <img
+              src="https://www.themealdb.com/images/media/meals/rqvwxt1511384809.jpg"
+              alt=""
+            /><span>Lasagna</span>
+          </li>
+        </ul>
+      </div>
+      <div class="meals" id="meals">
+        <span class="random"> Random Recipe </span>
+        <div class="meal">
+          <div class="meal-header">
+            <img
+              src="https://www.themealdb.com/images/media/meals/uwxqwy1483389553.jpg"
+              alt=""
+            />
+          </div>
+          <div class="meal-body">
+            <h4>non-veg</h4>
+            <button><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
