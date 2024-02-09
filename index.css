@@ -49,6 +49,7 @@ header button {
   color: #aaa;
   font-size: 1.5rem;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .fav-container {
@@ -124,7 +125,7 @@ header button {
 .meal-body .fav-btn {
   background-color: transparent;
   border: none;
-  color: rgb(252, 227, 233);
+  color: rgb(253, 216, 225);
   font-size: 1.2rem;
   cursor: pointer;
 }
