@@ -62,14 +62,30 @@ header button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   list-style-type: none;
   padding: 0;
 }
 
 .fav-meal li {
+  position: relative;
   width: 75px;
   margin: 5px;
+}
+
+.fav-meal li .clear {
+  position: absolute;
+  background-color: transparent;
+  top: -0.5rem;
+  right: -0.5rem;
+  border: none;
+  font-size: 1rem;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fav-meal li:hover .clear {
+  opacity: 1;
 }
 
 .fav-meal li img {
@@ -83,6 +99,11 @@ header button {
 
 .fav-meal li span {
   font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75px;
+  display: inline-block;
 }
 
 .meal {
